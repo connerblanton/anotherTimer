@@ -1,0 +1,19 @@
+{
+  "name": "another-timer",
+  "version": "1.0.0",
+  "description": "Just another timer for the world. Pomodoro timer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/connerblanton/anotherTimer.git"
+  },
+  "author": "connerblanton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/connerblanton/anotherTimer/issues"
+  },
+  "homepage": "https://github.com/connerblanton/anotherTimer#readme"
+}
