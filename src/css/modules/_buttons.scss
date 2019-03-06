@@ -1,0 +1,17 @@
+.button {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+
+  &.button-text {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0 1rem;
+
+    &:hover {
+      cursor: pointer;
+      border-bottom: 3px solid $primary;
+    }
+  }
+}
