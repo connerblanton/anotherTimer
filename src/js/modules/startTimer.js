@@ -1,8 +1,11 @@
+import settings from './settings'
 import getEndTime from './getEndTime'
 import getDifference from './getDifference'
+import logWork from './logWork'
 
 const startTimer = stage => {
-  const endTime = getEndTime(document.getElementById(stage).value) //date object
+  console.log(`starting ${stage}`);
+  const endTime = getEndTime(settings[stage].time) //date object
 
   let currentTimer = setInterval(() => {
     let timeDifference = getDifference(endTime, new Date())
@@ -15,7 +18,13 @@ const startTimer = stage => {
 
     if (minutes == 0 && seconds == 0) {
       clearInterval(currentTimer)
-      startTimer('work')
+      if (stage === 'break') settings.sessionsComplete++;
+      if (settings.sessionsComplete === settings.sessions) {
+        // we done
+        logWork();
+      } else {
+        startTimer(settings[stage].next)
+      }
     }
   }, 1000)
 }
