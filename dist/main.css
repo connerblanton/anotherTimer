@@ -1,0 +1,105 @@
+.top-row {
+  margin: 75px 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row.center {
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.col.center {
+  align-items: center;
+}
+.col.right {
+  align-items: flex-end;
+}
+.col.left {
+  align-items: flex-start;
+}
+.col.two-3 {
+  width: 66%;
+  max-width: 900px;
+}
+.col.one-3 {
+  width: 33%;
+}
+
+.card {
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+main .timer {
+  font-size: 144px;
+  font-weight: 600;
+  color: #29192a;
+}
+main .timer #minutes {
+  margin-right: -35px;
+}
+main .timer #seconds {
+  margin-left: -35px;
+}
+main .phases ul {
+  list-style: none;
+}
+main .phases ul li {
+  margin: 25px 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(163, 70, 164, 0.25);
+  text-transform: uppercase;
+}
+main .phases ul li.active {
+  color: #a346a4;
+}
+main .controller .button {
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+main .controller .button#startTimer {
+  background-color: #a346a4;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: 0.2s;
+}
+main .controller .button#startTimer:hover {
+  cursor: pointer;
+  background-color: #842d86;
+}
+main .input {
+  margin: 50px 0;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 30px;
+  color: #746175;
+}
+main .log h3 {
+  color: #746175;
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+main .log .card {
+  width: 465px;
+  height: 285px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #eaedf1;
+}
+
+/*# sourceMappingURL=main.css.map */

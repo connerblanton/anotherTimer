@@ -1,0 +1,19 @@
+.phases {
+  
+
+  ul {
+    list-style: none;
+
+    li {
+      margin: 25px 0;
+      font-size: 30px;
+      font-weight: bold;
+      color: $primary-fade;
+      text-transform: uppercase;
+
+      &.active {
+        color: $primary;
+      }
+    }
+  }
+}

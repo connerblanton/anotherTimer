@@ -1,0 +1,13 @@
+.timer {
+  font-size: 144px;
+  font-weight: 600;
+  color: $grey-darkest;
+
+  #minutes {
+    margin-right: -35px;
+  }
+
+  #seconds {
+    margin-left: -35px;
+  }
+}

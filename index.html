@@ -5,12 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Another Timer</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600" rel="stylesheet">
+  <link rel="stylesheet" href="dist/main.css"/>
 </head>
 <body>
-  <div class="timer">
-    <span id="minute">20</span>
-    :
-    <span id="second">00</span>
+  <main>
+    <div class="top-row row center">
+      <div class="col two-3 right">
+        <div class="col center">
+          <div class="timer">
+            <span id="minutes">20</span>
+            :
+            <span id="seconds">00</span>
+          </div>
+          <div class="controller">
+            <button id="startTimer" class="button">Start</button>
+          </div>
+          <div class="input">
+              What are you working on?
+          </div>
+          <div class="log">
+            <h3>Work Log</h3>
+            <div class="card"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col one-3 left">
+        <div class="phases">
+          <ul>
+            <li id="workk" class="active">work</li>
+            <li id="break">break</li>
+            <li id="longBreak">long break</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="settings">
+    <input id="work" type="number" value="20"/>
   </div>
   <script src="dist/main.js"></script>
 </body>

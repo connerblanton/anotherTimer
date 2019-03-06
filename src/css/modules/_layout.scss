@@ -1,0 +1,38 @@
+.top-row {
+  margin: 75px 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+
+  &.center {
+    justify-content: center;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+
+  &.center {
+    align-items: center;
+  }
+
+  &.right {
+    align-items: flex-end;
+  }
+
+  &.left {
+    align-items: flex-start;
+  }
+
+  &.two-3 {
+    width: 66%;
+    max-width: 900px;
+  }
+
+  &.one-3 {
+    width: 33%;
+  }
+}

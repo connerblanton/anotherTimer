@@ -1,0 +1,9 @@
+@import './modules/colors';
+@import './modules/layout';
+@import './modules/card';
+@import './modules/main';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $grey-light;
+}
